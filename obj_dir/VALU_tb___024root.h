@@ -25,7 +25,6 @@ class alignas(VL_CACHE_LINE_BYTES) VALU_tb___024root final : public VerilatedMod
     CData/*0:0*/ __VactContinue;
     SData/*15:0*/ ALU_tb__DOT__A_in;
     SData/*15:0*/ ALU_tb__DOT__B_in;
-    SData/*15:0*/ ALU_tb__DOT__out;
     IData/*31:0*/ __VactIterCount;
     VlDelayScheduler __VdlySched;
     VlTriggerVec<1> __VstlTriggered;

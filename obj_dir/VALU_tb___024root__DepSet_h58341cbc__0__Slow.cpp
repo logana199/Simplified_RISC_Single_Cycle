@@ -131,7 +131,6 @@ VL_ATTR_COLD void VALU_tb___024root___ctor_var_reset(VALU_tb___024root* vlSelf) 
     vlSelf->ALU_tb__DOT__A_in = VL_RAND_RESET_I(16);
     vlSelf->ALU_tb__DOT__B_in = VL_RAND_RESET_I(16);
     vlSelf->ALU_tb__DOT__ALU_op = VL_RAND_RESET_I(4);
-    vlSelf->ALU_tb__DOT__out = VL_RAND_RESET_I(16);
     vlSelf->ALU_tb__DOT__AddSubCBin = VL_RAND_RESET_I(1);
     vlSelf->ALU_tb__DOT__FlagsNZCV = VL_RAND_RESET_I(4);
     }
