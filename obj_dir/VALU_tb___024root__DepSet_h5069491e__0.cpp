@@ -141,10 +141,14 @@ VL_INLINE_OPT void VALU_tb___024root___act_sequent__TOP__0(VALU_tb___024root* vl
     if ((8U & (IData)(vlSelf->ALU_tb__DOT__ALU_op))) {
         ALU_tb__DOT__out = (0xffffU & ((4U & (IData)(vlSelf->ALU_tb__DOT__ALU_op))
                                         ? ((2U & (IData)(vlSelf->ALU_tb__DOT__ALU_op))
-                                            ? 0U : 
-                                           ((1U & (IData)(vlSelf->ALU_tb__DOT__ALU_op))
-                                             ? 0U : 
-                                            VL_SHIFTR_III(16,16,16, (IData)(vlSelf->ALU_tb__DOT__A_in), (IData)(vlSelf->ALU_tb__DOT__B_in))))
+                                            ? ((1U 
+                                                & (IData)(vlSelf->ALU_tb__DOT__ALU_op))
+                                                ? 0U
+                                                : (IData)(vlSelf->ALU_tb__DOT__A_in))
+                                            : ((1U 
+                                                & (IData)(vlSelf->ALU_tb__DOT__ALU_op))
+                                                ? (IData)(vlSelf->ALU_tb__DOT__A_in)
+                                                : VL_SHIFTR_III(16,16,16, (IData)(vlSelf->ALU_tb__DOT__A_in), (IData)(vlSelf->ALU_tb__DOT__B_in))))
                                         : ((2U & (IData)(vlSelf->ALU_tb__DOT__ALU_op))
                                             ? ((1U 
                                                 & (IData)(vlSelf->ALU_tb__DOT__ALU_op))

@@ -85,7 +85,7 @@ module ALU (
             //ROI rotate, might be harder to implement
             //CMP, like sub, but only for setting flags
             4'b1111 : out=0;
-            default : out=0;
+            default : out=A_in;
         endcase
         //zero flag
         FlagsNZCV[2]=((out==0)&&ALU_op!=4'b1111)||((ALU_op==4'b1111)&&(A_in-B_in)==0);
